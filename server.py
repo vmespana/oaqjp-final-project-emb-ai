@@ -13,7 +13,6 @@ def sent_analyzer():
     """
     # Obtiene el texto a analizar desde los argumentos de la URL
     text_to_analyze = request.args.get('textToAnalyze')
-    
     # Llama a la función de detección
     response = emotion_detector(text_to_analyze)
 
@@ -39,3 +38,4 @@ def render_index_page():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
+    
